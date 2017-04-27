@@ -7,7 +7,19 @@ import javax.swing.JOptionPane;
 
 public class Facebook4 {
 
-   
+   /**
+    * menú en el que seleccionamos las diferentes posibilidades de la apliación
+    * <ul>
+    * <li/>publicar estado
+    * <li/>publicar foto
+    * <li/>comentar foto
+    * <li/>buscar post
+    * <li/>buscar noticias
+    * </ul>
+    * @param args
+    * @throws FacebookException
+    * @throws MalformedURLException 
+    */
     public static void main(String[] args) throws FacebookException, MalformedURLException {
    
    
