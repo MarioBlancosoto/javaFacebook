@@ -17,22 +17,26 @@ public class Autorizacion {
 
     static String mensaje;
     static Facebook facebook;
-
+/**
+ * configuración para la app en la que introducimos los diferentes tokkens de acceso
+ */
     public static void autorizar() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
                 .setOAuthAppId("1708752362750702")
                 .setOAuthAppSecret("acab787dfca5bc6f057dcc9864ad2987")
-                .setOAuthAccessToken("EAAYSGemXQu4BADMIrwTvb37e9qBEZCdM9FSXMJ5IV76PjzOTfGmqn64cOOV4faRxqJZAHv2cGE5BfuZAuxbNNcsSiYpZArEQS0tEhiZCi0QnJcuDYypMuY5BnxGbFZCkFF4YlIqfDzQnoTXirSS3wvAZBkUDSPo2UJ36iGrODdYD70uZANIck3mOFNUUZBW15u78ZD")
+                .setOAuthAccessToken("EAAYSGemXQu4BABJ42eik5Y90cvBKKvaN3IAlcvlnbzql4o3hMdxTQyqVRPflXu57D115xqkVrXRTR6zbPyUiSbXfVO1qVy2tlyiIkr27ZCrjZA7QYu9kXSHLcyZA8CgN8GTWfPqLCeeJ5r1bphPRicw4LlCKV0ZD")
                 .setOAuthPermissions("email,publish_stream,publish_actions,user_likes,manage_pages,read_stream");
         FacebookFactory ff = new FacebookFactory(cb.build());
         facebook = ff.getInstance();
 
     }
-/**
- * postea un mensaje en tu muro
- * @param mensaje  contiene el mensaje a postear
- */
+
+    /**
+     * postea un mensaje en tu muro
+     *
+     * @param mensaje contiene el mensaje a postear
+     */
     public static void postearMensaje(String mensaje) {
 
         try {
