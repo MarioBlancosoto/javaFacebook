@@ -80,7 +80,7 @@ public class Autorizacion {
     }
 
     /**
-     * crea un nuevo post con imagen incluida
+     * crea un nuevo post con imagen incluida,pero sólo desde  una URL  dada por parámetro
      *
      * @throws MalformedURLException
      * @throws FacebookException
