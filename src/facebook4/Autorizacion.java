@@ -64,9 +64,8 @@ public class Autorizacion {
      * @throws FacebookException
      */
     public static void buscarFeed() throws FacebookException {
-        ResponseList<Post> feed = facebook.getFeed(JOptionPane.showInputDialog("Introduce la palabra clave a buscar"));
-        System.out.println(feed.toString());
-
+        ResponseList<Post> noticia = facebook.getFeed(JOptionPane.showInputDialog("Introduce la palabra clave a buscar"));
+        System.out.println(noticia.toString());
     }
 
     /**
@@ -86,11 +85,11 @@ public class Autorizacion {
      * @throws FacebookException
      */
     public static void postPhoto() throws MalformedURLException, FacebookException {
-        PostUpdate post = new PostUpdate(new URL("http://facebook4j.org"))
-                .picture(new URL("http://facebook4j.org/images/hero.png"))
-                .name("Facebook4J - A Java library for the Facebook Graph API")
-                .caption("facebook4j.org")
-                .description("Facebook4J is a Java library for the Facebook Graph API.");
+        PostUpdate post = new PostUpdate(new URL("http://allblacks.com"))
+                .picture(new URL("http://nzrumedia.azurewebsites.net/media/2F225B75-A74D-CBF6-40212B37D6118153.jpg"))
+                .name("All blacks maori team Logo")
+                .caption("allblacks.com")
+                .description("All blacks Maori team");
         facebook.postFeed(post);
     }
 
